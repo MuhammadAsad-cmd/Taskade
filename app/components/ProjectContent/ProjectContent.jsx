@@ -58,7 +58,7 @@ const ProjectContent = () => {
                 <div className="flex items-center flex-wrap mt-0.5 gap-1">
                   <button
                     type="button"
-                    className="px-2 h-6 flex items-center justify-center gap-0.5 border border-dark-charcoal hover:border-slate-gray text-[#E5E5E5] rounded-full bg-[#1e1f23]"
+                    className="px-2 h-6 whitespace-nowrap flex items-center justify-center gap-0.5 border border-dark-charcoal hover:border-slate-gray text-[#E5E5E5] rounded-full bg-[#1e1f23]"
                   >
                     <svg
                       className="text-[#E5E5E5]"
@@ -80,7 +80,7 @@ const ProjectContent = () => {
                   </button>
                   <button
                     type="button"
-                    className="px-2 h-6 flex items-center justify-center gap-0.5 border border-dark-charcoal hover:border-slate-gray text-[#E5E5E5] rounded-full bg-[#1e1f23]"
+                    className="px-2 h-6 whitespace-nowrap flex items-center justify-center gap-0.5 border border-dark-charcoal hover:border-slate-gray text-[#E5E5E5] rounded-full bg-[#1e1f23]"
                   >
                     <svg
                       width="14"
@@ -101,14 +101,14 @@ const ProjectContent = () => {
                   </button>
                   <button
                     type="button"
-                    className="px-2 h-6 flex items-center justify-center gap-0.5 border border-dark-charcoal hover:border-slate-gray text-[#E5E5E5] rounded-full bg-[#1e1f23]"
+                    className="px-2 h-6 whitespace-nowrap flex items-center justify-center gap-0.5 border border-dark-charcoal hover:border-slate-gray text-[#E5E5E5] rounded-full bg-[#1e1f23]"
                   >
                     <PlusIcon />
                     <span>Tag</span>
                   </button>
                   <button
                     type="button"
-                    className="px-2 h-6 flex items-center justify-center gap-0.5 border border-dark-charcoal hover:border-slate-gray text-[#E5E5E5] rounded-full bg-[#1e1f23]"
+                    className="px-2 h-6 whitespace-nowrap flex items-center justify-center gap-0.5 border border-dark-charcoal hover:border-slate-gray text-[#E5E5E5] rounded-full bg-[#1e1f23]"
                   >
                     <AutoIcon />
                     <span>Automate</span>
@@ -175,10 +175,10 @@ const ProjectContent = () => {
                 <p className="text-[17px] font-medium text-[#E5E5E5]">
                   Untitled
                 </p>
-                <div className="flex items-center mt-0.5 gap-1">
+                <div className="flex items-center flex-wrap mt-0.5 gap-1">
                   <button
                     type="button"
-                    className="px-2 h-6 flex items-center justify-center gap-0.5 border border-dark-charcoal hover:border-slate-gray text-[#E5E5E5] rounded-full bg-[#1e1f23]"
+                    className="px-2 h-6 whitespace-nowrap flex items-center justify-center gap-0.5 border border-dark-charcoal hover:border-slate-gray text-[#E5E5E5] rounded-full bg-[#1e1f23]"
                   >
                     <svg
                       className="text-[#E5E5E5]"
@@ -200,7 +200,7 @@ const ProjectContent = () => {
                   </button>
                   <button
                     type="button"
-                    className="px-2 h-6 flex items-center justify-center gap-0.5 border border-dark-charcoal hover:border-slate-gray text-[#E5E5E5] rounded-full bg-[#1e1f23]"
+                    className="px-2 h-6 whitespace-nowrap flex items-center justify-center gap-0.5 border border-dark-charcoal hover:border-slate-gray text-[#E5E5E5] rounded-full bg-[#1e1f23]"
                   >
                     <svg
                       width="14"
@@ -221,14 +221,14 @@ const ProjectContent = () => {
                   </button>
                   <button
                     type="button"
-                    className="px-2 h-6 flex items-center justify-center gap-0.5 border border-dark-charcoal hover:border-slate-gray text-[#E5E5E5] rounded-full bg-[#1e1f23]"
+                    className="px-2 h-6 whitespace-nowrap flex items-center justify-center gap-0.5 border border-dark-charcoal hover:border-slate-gray text-[#E5E5E5] rounded-full bg-[#1e1f23]"
                   >
                     <PlusIcon />
                     <span>Tag</span>
                   </button>
                   <button
                     type="button"
-                    className="px-2 h-6 flex items-center justify-center gap-0.5 border border-dark-charcoal hover:border-slate-gray text-[#E5E5E5] rounded-full bg-[#1e1f23]"
+                    className="px-2 h-6 flex whitespace-nowrap items-center justify-center gap-0.5 border border-dark-charcoal hover:border-slate-gray text-[#E5E5E5] rounded-full bg-[#1e1f23]"
                   >
                     <AutoIcon />
                     <span>Automate</span>
@@ -239,7 +239,7 @@ const ProjectContent = () => {
                 </div>
               </div>
             </div>
-            <div className="flex items-center">
+            <div className="flex whitespace-nowrap items-center">
               <button className="size-10  flex items-center justify-center rounded-xl hover:bg-appcolor">
                 <svg
                   width="30"

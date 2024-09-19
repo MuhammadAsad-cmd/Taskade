@@ -12,17 +12,17 @@ import ProjectContent from "../ProjectContent/ProjectContent";
 const MainContent = () => {
   return (
     <>
-      <div className="flex w-full items-center flex-col min-h-screen">
-        <div className="flex w-full flex-col pr-3">
-          <div className="flex h-12 w-full px-4  justify-between items-center py-2">
+      <div className="flex w-full items-center flex-col">
+        <div className="flex w-full flex-col md:pr-3">
+          <div className="flex h-12 w-full px-4 justify-between items-center py-2">
             <div className="flex items-center gap-3">
-              <div className="flex items-center">
+              <div className="hidden md:flex items-center">
                 <div className="font-medium leading-6 text-[15px] size-6 bg-vivid-pink rounded-lg flex items-center justify-center">
                   <span>W</span>
                 </div>
                 <span className="ml-2 text-sm leading-5">Workspace</span>
               </div>
-              <div className="size-5 flex items-center justify-center text-xl">
+              <div className="size-5 hidden md:flex items-center justify-center text-xl">
                 <MdChevronRight />
               </div>
 
@@ -59,7 +59,7 @@ const MainContent = () => {
               </div>
             </div>
             <div className="flex items-center">
-              <button className="flex shrink-0 rounded-full">
+              <button className="hidden md:flex shrink-0 rounded-full">
                 <Image
                   width={28}
                   height={28}
@@ -86,8 +86,8 @@ const MainContent = () => {
                 </svg>
                 <span className="hidden md:block">Share</span>
               </button>
-              <div className="mr-3 flex h-5 w-px bg-appcolor"></div>
-              <div className="mr-3 flex h-8 w-fit cursor-pointer items-center justify-center gap-x-1 rounded-full bg-upgrade px-3 pr-4 text-sm font-medium text-[#0c0500] transition duration-250 ease-in-out hover:bg-upgrade/75">
+              <div className="md:mr-3 flex h-5 w-px bg-appcolor"></div>
+              <div className="md:mr-3 flex h-8 w-fit cursor-pointer items-center justify-center gap-x-1 rounded-full bg-upgrade px-3 pr-4 text-sm font-medium text-[#0c0500] transition duration-250 ease-in-out hover:bg-upgrade/75">
                 <svg
                   className="size-4"
                   fill="currentColor"
@@ -107,8 +107,8 @@ const MainContent = () => {
             </div>
           </div>
 
-          <div className="py-2.5 px-4  flex items-center justify-between">
-            <div className="flex gap-1 items-center">
+          <div className="py-2.5 px-4 flex gap-3 items-center justify-between">
+            <div className="flex gap-1 overflow-x-auto custom-scrollbar whitespace-nowrap w-full items-center">
               <div className="bg-appcolor text-vivid-pink flex items-center min-h-8 text-sm px-2 rounded-full gap-1">
                 <ProjectIcon />
                 Projects
@@ -135,7 +135,7 @@ const MainContent = () => {
                 Media
               </div>
             </div>
-            <div className="flex mr-3 items-center text-sm">
+            <div className="flex md:mr-3 whitespace-nowrap items-center text-sm">
               <button className="flex h-8 items-center justify-center gap-2 rounded-full bg-primary px-3 pr-4 text-sm text-white transition duration-250 ease-in-out hover:bg-primary/80">
                 <PlusIcon />
                 Create new
@@ -143,7 +143,7 @@ const MainContent = () => {
             </div>
           </div>
 
-          <div>
+          <div className="px-4">
             <button
               className="flex h-8 cursor-pointer flex-row items-center rounded-3xl px-3 text-sm bg-[#1b1f22] text-[#9ea2a5] hover:bg-appcolor hover:text-textcolor-800"
               type="button"
@@ -163,7 +163,7 @@ const MainContent = () => {
           </div>
 
           <div className="mb-5 px-4  pb-15 mt-3">
-            <div className="mr-5 flex justify-between gap-x-2">
+            <div className="mr-5 flex overflow-x-auto custom-scrollbar whitespace-nowrap w-full justify-between gap-x-2">
               <div className=" flex w-full py-4 px-4 gap-x-3 cursor-pointer rounded-2xl border border-[#4c4d51] hover:bg-[#1c1f22] items-center">
                 <svg
                   className="shrink-0 text-appcolor-500"
@@ -261,7 +261,6 @@ const MainContent = () => {
               </div>
             </div>
           </div>
-          {/* Content */}
           <ProjectContent />
         </div>
       </div>
