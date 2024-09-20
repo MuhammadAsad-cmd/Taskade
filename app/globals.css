@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 body {
-  @apply bg-gray-100 text-gray-600 hover:text-gray-700;
+  @apply bg-white text-gray-600 hover:text-gray-700;
 }
 
 .custom-scrollbar::-webkit-scrollbar {
@@ -30,16 +30,18 @@ body {
   background: #555555;
 }
 
-/* Custom styles for perfect-scrollbar */
-.ps__thumb-y {
-  background: #333; /* Scrollbar color */
-  border-radius: 10px;
+.modal {
+  opacity: 0;
+  transform: translateY(-20px);
+  transition: opacity 0.3s ease, transform 0.3s ease;
 }
 
-.ps__thumb-y:hover {
-  background: #555; /* Hover color */
+.modal.open {
+  opacity: 1;
+  transform: translateY(0);
 }
 
-.ps__rail-y {
-  background: #1a1a1a; /* Rail color */
+.modal.close {
+  opacity: 0;
+  transform: translateY(-20px);
 }

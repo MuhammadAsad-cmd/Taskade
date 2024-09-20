@@ -27,7 +27,7 @@ const RightSidebar = () => {
             <div className="sticky bottom-0 flex w-full flex-col items-center pb-3">
               <div
                 onClick={toggleSidebar}
-                className="flex size-8 cursor-pointer items-center justify-center rounded-full border border-gray-200 bg-gray-200 text-appcolor transition duration-250 ease-in-out hover:scale-110  hover:text-gray-700"
+                className="flex size-8 cursor-pointer items-center justify-center rounded-full border border-gray-200 bg-gray-100 text-appcolor transition duration-250 ease-in-out hover:scale-110  hover:text-gray-700"
               >
                 <MenuIcon />
               </div>
@@ -37,7 +37,7 @@ const RightSidebar = () => {
 
         {/* Expanded Sidebar */}
         {isExpanded && (
-          <div className="max-w-64 w-64 overflow-hidden transition-all duration-300 bg-gray-100 border-l border-solid border-appcolor">
+          <div className="max-w-80 w-80 overflow-hidden transition-all duration-300 bg-white border-l border-solid">
             <div className="flex flex-col h-full p-4">
               <h2 className="text-xl font-bold mb-4">Expanded Sidebar</h2>
               {/* Add content for expanded sidebar here */}

@@ -30,12 +30,12 @@ const ProjectContent = () => {
           </button>
         </div>
 
-        <div className="hover:bg-gray-200">
+        <div className="hover:bg-gray-100">
           <div className="py-[14px] px-4 flex justify-between">
             <div className="flex ">
               <button
                 type="button"
-                className="h-[50px] w-[50px] mr-5 rounded-lg flex items-center justify-center text-light-gray hover:bg-gray-300"
+                className="h-[50px] w-[50px] mr-5 rounded-lg flex items-center justify-center text-light-gray hover:bg-gray-100"
               >
                 <svg
                   width="30"
@@ -56,7 +56,7 @@ const ProjectContent = () => {
                 <div className="flex items-center flex-wrap mt-0.5 gap-1">
                   <button
                     type="button"
-                    className="px-2 h-6 whitespace-nowrap flex items-center justify-center gap-0.5 border border-gray-200 hover:border-gray-200 rounded-full bg-gray-300"
+                    className="px-2 h-6 whitespace-nowrap flex items-center justify-center gap-0.5 border border-gray-200 hover:border-gray-200 rounded-full bg-gray-100"
                   >
                     <svg
                       className="text-[#E5E5E5]"
@@ -78,7 +78,7 @@ const ProjectContent = () => {
                   </button>
                   <button
                     type="button"
-                    className="px-2 h-6 whitespace-nowrap flex items-center justify-center gap-0.5 border border-gray-200 hover:border-gray-200 rounded-full bg-gray-300"
+                    className="px-2 h-6 whitespace-nowrap flex items-center justify-center gap-0.5 border border-gray-200 hover:border-gray-200 rounded-full bg-gray-100"
                   >
                     <svg
                       width="14"
@@ -99,14 +99,14 @@ const ProjectContent = () => {
                   </button>
                   <button
                     type="button"
-                    className="px-2 h-6 whitespace-nowrap flex items-center justify-center gap-0.5 border border-gray-200 hover:border-gray-200 rounded-full bg-gray-300"
+                    className="px-2 h-6 whitespace-nowrap flex items-center justify-center gap-0.5 border border-gray-200 hover:border-gray-200 rounded-full bg-gray-100"
                   >
                     <PlusIcon />
                     <span>Tag</span>
                   </button>
                   <button
                     type="button"
-                    className="px-2 h-6 whitespace-nowrap flex items-center justify-center gap-0.5 border border-gray-200 hover:border-gray-200 rounded-full bg-gray-300"
+                    className="px-2 h-6 whitespace-nowrap flex items-center justify-center gap-0.5 border border-gray-200 hover:border-gray-200 rounded-full bg-gray-100"
                   >
                     <AutoIcon />
                     <span>Automate</span>
@@ -161,12 +161,12 @@ const ProjectContent = () => {
           </div>
         </div>
 
-        <div className="hover:bg-gray-200">
+        <div className="hover:bg-gray-100">
           <div className="py-[14px] px-4 flex justify-between">
             <div className="flex ">
               <button
                 type="button"
-                className="h-[50px] w-[50px] mr-5 rounded-lg flex items-center justify-center text-light-gray hover:bg-gray-300"
+                className="h-[50px] w-[50px] mr-5 rounded-lg flex items-center justify-center text-light-gray hover:bg-gray-100"
               >
                 🚀
               </button>
@@ -175,7 +175,7 @@ const ProjectContent = () => {
                 <div className="flex items-center flex-wrap mt-0.5 gap-1">
                   <button
                     type="button"
-                    className="px-2 h-6 whitespace-nowrap flex items-center justify-center gap-0.5 border border-gray-200 hover:border-gray-200 rounded-full bg-gray-300"
+                    className="px-2 h-6 whitespace-nowrap flex items-center justify-center gap-0.5 border border-gray-200 hover:border-gray-200 rounded-full bg-gray-100"
                   >
                     <svg
                       className="text-[#E5E5E5]"
@@ -197,7 +197,7 @@ const ProjectContent = () => {
                   </button>
                   <button
                     type="button"
-                    className="px-2 h-6 whitespace-nowrap flex items-center justify-center gap-0.5 border border-gray-200 hover:border-gray-200 rounded-full bg-gray-300"
+                    className="px-2 h-6 whitespace-nowrap flex items-center justify-center gap-0.5 border border-gray-200 hover:border-gray-200 rounded-full bg-gray-100"
                   >
                     <svg
                       width="14"
@@ -218,14 +218,14 @@ const ProjectContent = () => {
                   </button>
                   <button
                     type="button"
-                    className="px-2 h-6 whitespace-nowrap flex items-center justify-center gap-0.5 border border-gray-200 hover:border-gray-200 rounded-full bg-gray-300"
+                    className="px-2 h-6 whitespace-nowrap flex items-center justify-center gap-0.5 border border-gray-200 hover:border-gray-200 rounded-full bg-gray-100"
                   >
                     <PlusIcon />
                     <span>Tag</span>
                   </button>
                   <button
                     type="button"
-                    className="px-2 h-6 whitespace-nowrap flex items-center justify-center gap-0.5 border border-gray-200 hover:border-gray-200 rounded-full bg-gray-300"
+                    className="px-2 h-6 whitespace-nowrap flex items-center justify-center gap-0.5 border border-gray-200 hover:border-gray-200 rounded-full bg-gray-100"
                   >
                     <AutoIcon />
                     <span>Automate</span>

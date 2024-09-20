@@ -13,36 +13,36 @@ const LeftSidebar = () => {
     <>
       <div className="flex">
         {/* left Sidebar */}
-        <div className="relative hidden transition-all duration-300 ease-in-out lg:flex h-screen flex-shrink-0 w-[59px] flex-col overflow-auto border-r border-gray-200 bg-gray-100 py-2 pb-0">
+        <div className="relative hidden transition-all duration-300 ease-in-out lg:flex h-screen flex-shrink-0 w-[59px] flex-col overflow-auto border-r border-gray-200  py-2 pb-0">
           <div className="flex items-center flex-col gap-y-4">
             <div className="flex flex-col items-center">
-              <div className="flex  size-9 items-center justify-center p-0 shadow-none cursor-pointer border-0 relative rounded-xl text-gray-600 hover:text-gray-700 transition-colors ease-in-out duration-200 bg-transparent hover:bg-gray-200">
+              <div className="flex  size-9 items-center justify-center p-0 shadow-none cursor-pointer border-0 relative rounded-xl text-gray-600 hover:text-gray-700 transition-colors ease-in-out duration-200 bg-transparent hover:bg-gray-100">
                 <SearchIcon />
               </div>
-              <div className="flex  size-9 items-center justify-center p-0 shadow-none cursor-pointer border-0 relative rounded-xl text-gray-600 hover:text-gray-700 transition-colors ease-in-out duration-200 bg-transparent hover:bg-gray-200">
+              <div className="flex  size-9 items-center justify-center p-0 shadow-none cursor-pointer border-0 relative rounded-xl text-gray-600 hover:text-gray-700 transition-colors ease-in-out duration-200 bg-transparent hover:bg-gray-100">
                 <ClockIcon />
               </div>
-              <div className="flex  size-9 items-center justify-center p-0 shadow-none cursor-pointer border-0 relative rounded-xl text-gray-600 hover:text-gray-700 transition-colors ease-in-out duration-200 bg-transparent hover:bg-gray-200">
+              <div className="flex  size-9 items-center justify-center p-0 shadow-none cursor-pointer border-0 relative rounded-xl text-gray-600 hover:text-gray-700 transition-colors ease-in-out duration-200 bg-transparent hover:bg-gray-100">
                 <TaskIcon />
               </div>
-              <div className="flex  size-9 items-center justify-center p-0 shadow-none cursor-pointer border-0 relative rounded-xl text-gray-600 hover:text-gray-700 transition-colors ease-in-out duration-200 bg-transparent hover:bg-gray-200">
+              <div className="flex  size-9 items-center justify-center p-0 shadow-none cursor-pointer border-0 relative rounded-xl text-gray-600 hover:text-gray-700 transition-colors ease-in-out duration-200 bg-transparent hover:bg-gray-100">
                 <Calender />
               </div>
-              <div className="flex size-9 items-center justify-center p-0 shadow-none cursor-pointer border-0 relative rounded-xl text-gray-600 hover:text-gray-700 transition-colors ease-in-out duration-200 bg-transparent  hover:bg-gray-200">
+              <div className="flex size-9 items-center justify-center p-0 shadow-none cursor-pointer border-0 relative rounded-xl text-gray-600 hover:text-gray-700 transition-colors ease-in-out duration-200 bg-transparent  hover:bg-gray-100">
                 <Star />
               </div>
-              <div className="flex size-9 items-center justify-center p-0 shadow-none cursor-pointer border-0 relative rounded-xl text-gray-600 hover:text-gray-700 transition-colors ease-in-out duration-200 bg-transparent  hover:bg-gray-200">
+              <div className="flex size-9 items-center justify-center p-0 shadow-none cursor-pointer border-0 relative rounded-xl text-gray-600 hover:text-gray-700 transition-colors ease-in-out duration-200 bg-transparent  hover:bg-gray-100">
                 <Shared />
               </div>
             </div>
-            <div className="p-0.5  rounded-2xl border-2 border-gray-600 flex items-center justify-center">
+            <div className="p-0.5  rounded-2xl border-2 border-gray-400 flex items-center justify-center">
               <div className="size-9 bg-vivid-pink rounded-xl flex items-center justify-center text-white font-medium text-lg">
                 W
               </div>
             </div>
           </div>
           <div className="sticky bottom-0 z-10 mt-auto flex w-full flex-col items-center gap-y-px  py-3 ">
-            <button className="relative flex size-9 cursor-pointer items-center justify-center rounded-xl text-gray-600 hover:text-gray-700 shadow-none transition-colors duration-200 ease-in-out  hover:bg-gray-200">
+            <button className="relative flex size-9 cursor-pointer items-center justify-center rounded-xl text-gray-600 hover:text-gray-700 shadow-none transition-colors duration-200 ease-in-out  hover:bg-gray-100">
               <svg
                 fill="currentColor"
                 height="20"
@@ -75,7 +75,7 @@ const LeftSidebar = () => {
               aria-haspopup="menu"
               role="button"
               tabindex="0"
-              className="relative flex size-9 cursor-pointer items-center justify-center rounded-xl text-gray-600 hover:text-gray-700 shadow-none transition-colors duration-200 ease-in-out  hover:bg-gray-200"
+              className="relative flex size-9 cursor-pointer items-center justify-center rounded-xl text-gray-600 hover:text-gray-700 shadow-none transition-colors duration-200 ease-in-out  hover:bg-gray-100"
             >
               <svg
                 fill="currentColor"
@@ -109,10 +109,10 @@ const LeftSidebar = () => {
             </button>
           </div>
         </div>
-        <div className="w-[250px] transition-all duration-300 hidden lg:flex shrink-0 flex-col border-r border-gray-200 bg-gray-100 duration-250 ease-in-out">
+        <div className="w-[250px] transition-all duration-300 hidden lg:flex shrink-0 flex-col border-r border-gray-200  duration-250 ease-in-out">
           <div className="h-full overflow-y-auto p-3 no-scrollbar">
             <div className="rounded-md">
-              <div className="relative mb-px flex cursor-pointer items-center gap-3 rounded-lg px-3 py-1 text-sm text-appcolor-800 hover:bg-gray-200">
+              <div className="relative mb-px flex cursor-pointer items-center gap-3 rounded-lg px-3 py-1 text-sm text-appcolor-800 hover:bg-gray-100">
                 <div className="flex h-6 w-6 items-center justify-center">
                   <HomeIcon />
                 </div>
@@ -122,7 +122,7 @@ const LeftSidebar = () => {
 
             <button
               type="button"
-              className="relative mb-px flex w-full cursor-pointer items-center gap-3 rounded-lg px-3 py-1 text-sm hover:text-gray-700 text-gray-600 hover:bg-gray-200"
+              className="relative mb-px flex w-full cursor-pointer items-center gap-3 rounded-lg px-3 py-1 text-sm hover:text-gray-700 text-gray-600 hover:bg-gray-100"
             >
               <div className="flex h-6 w-6 shrink-0 items-center justify-center">
                 <svg
@@ -142,7 +142,7 @@ const LeftSidebar = () => {
               New folder
             </button>
           </div>
-          <div className="shadow:md p-4 m-2 mb-3 flex flex-col gap-y-4 rounded-xl border border-solid border-gray-300 bg-gray-100">
+          <div className="shadow:md p-4 m-2 mb-3 flex flex-col gap-y-4 rounded-xl border border-solid border-gray-300 bg-gray-50">
             <h2 className="text-md flex items-center gap-x-2 font-medium">
               🎉 Try Pro!
             </h2>
