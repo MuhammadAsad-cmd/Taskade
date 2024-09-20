@@ -17,7 +17,7 @@ const MainContent = () => {
           <div className="flex h-12 w-full px-4 justify-between items-center py-2">
             <div className="flex items-center gap-3">
               <div className="hidden md:flex items-center">
-                <div className="font-medium leading-6 text-[15px] size-6 bg-vivid-pink rounded-lg flex items-center justify-center">
+                <div className="font-medium leading-6 text-[15px] text-white size-6 bg-vivid-pink rounded-lg flex items-center justify-center">
                   <span>W</span>
                 </div>
                 <span className="ml-2 text-sm leading-5">Workspace</span>
@@ -109,28 +109,28 @@ const MainContent = () => {
 
           <div className="py-2.5 px-4 flex gap-3 items-center justify-between">
             <div className="flex gap-1 overflow-x-auto custom-scrollbar whitespace-nowrap w-full items-center">
-              <div className="bg-appcolor text-vivid-pink flex items-center min-h-8 text-sm px-2 rounded-full gap-1">
+              <div className="bg-gray-200 hover:bg-gray-200 cursor-pointer text-vivid-pink flex items-center min-h-8 text-sm px-2 rounded-full gap-1">
                 <ProjectIcon />
                 Projects
               </div>
-              <div className="hover:text-vivid-pink text-medium-gray duration-300 ease-in-out text-sm cursor-pointer flex items-center min-h-8 px-2 rounded-full gap-1">
+              <div className="hover:text-vivid-pink text-gray-600 duration-300 ease-in-out text-sm cursor-pointer flex items-center min-h-8 px-2 rounded-full gap-1">
                 <AgentIcon />
                 AI Agents
               </div>
               <div className="flex items-center">
-                <div className="hover:text-vivid-pink text-medium-gray duration-300 ease-in-out text-sm cursor-pointer flex items-center min-h-8 px-2 rounded-full gap-1">
+                <div className="hover:text-vivid-pink text-gray-600 duration-300 ease-in-out text-sm cursor-pointer flex items-center min-h-8 px-2 rounded-full gap-1">
                   <TeamIcon />
                   AI Teams
                 </div>
-                <div className="px-2 h-5 text-[11px] rounded-full font-bold flex items-center justify-center text-vivid-pink bg-dark-maroon uppercase">
+                <div className="px-2 h-5 text-[11px] rounded-full font-bold flex items-center justify-center text-gray-600 bg-gray-200 uppercase">
                   new
                 </div>
               </div>
-              <div className="hover:text-vivid-pink text-medium-gray duration-300 ease-in-out text-sm cursor-pointer flex items-center min-h-8 px-2 rounded-full gap-1">
+              <div className="hover:text-vivid-pink text-gray-600 duration-300 ease-in-out text-sm cursor-pointer flex items-center min-h-8 px-2 rounded-full gap-1">
                 <AutoIcon />
                 Automations
               </div>
-              <div className="hover:text-vivid-pink text-medium-gray duration-300 ease-in-out text-sm cursor-pointer flex items-center min-h-8 px-2 rounded-full gap-1">
+              <div className="hover:text-vivid-pink text-gray-600 duration-300 ease-in-out text-sm cursor-pointer flex items-center min-h-8 px-2 rounded-full gap-1">
                 <MediaIcon />
                 Media
               </div>
@@ -145,7 +145,7 @@ const MainContent = () => {
 
           <div className="px-4">
             <button
-              className="flex h-8 cursor-pointer flex-row items-center rounded-3xl px-3 text-sm bg-[#1b1f22] text-[#9ea2a5] hover:bg-appcolor hover:text-textcolor-800"
+              className="flex h-8 cursor-pointer flex-row items-center rounded-3xl px-3 text-sm bg-gray-200 text-gray-600 hover:bg-gray-300 hover:text-gray-700"
               type="button"
             >
               <svg
@@ -164,7 +164,7 @@ const MainContent = () => {
 
           <div className="mb-5 px-4  pb-15 mt-3">
             <div className="mr-5 flex overflow-x-auto custom-scrollbar whitespace-nowrap w-full justify-between gap-x-2">
-              <div className=" flex w-full py-4 px-4 gap-x-3 cursor-pointer rounded-2xl border border-[#4c4d51] hover:bg-[#1c1f22] items-center">
+              <div className=" flex w-full py-4 px-4 gap-x-3 cursor-pointer rounded-2xl border border-gray-300 hover:bg-gray-200 items-center">
                 <svg
                   className="shrink-0 text-appcolor-500"
                   fill="currentColor"
@@ -179,11 +179,9 @@ const MainContent = () => {
                     fill-rule="evenodd"
                   ></path>
                 </svg>
-                <p className="item-title rainbow truncate text-sm font-medium">
-                  Create with AI
-                </p>
+                <p className="text-sm font-medium">Create with AI</p>
               </div>
-              <div className="flex w-full py-4 px-4 gap-x-3 cursor-pointer rounded-2xl border border-[#4c4d51] hover:bg-[#1c1f22] items-center">
+              <div className=" flex w-full py-4 px-4 gap-x-3 cursor-pointer rounded-2xl border border-gray-300 hover:bg-gray-200 items-center">
                 <svg
                   className="shrink-0 text-appcolor-500"
                   fill="currentColor"
@@ -202,7 +200,7 @@ const MainContent = () => {
                   New List
                 </p>
               </div>
-              <div className="flex w-full py-4 px-4 gap-x-3 cursor-pointer rounded-2xl border border-[#4c4d51] hover:bg-[#1c1f22] items-center">
+              <div className=" flex w-full py-4 px-4 gap-x-3 cursor-pointer rounded-2xl border border-gray-300 hover:bg-gray-200 items-center">
                 <svg
                   className="shrink-0 text-appcolor-500"
                   fill="currentColor"
@@ -221,7 +219,7 @@ const MainContent = () => {
                   New Board
                 </p>
               </div>
-              <div className="flex w-full py-4 px-4 gap-x-3 cursor-pointer rounded-2xl border border-[#4c4d51] hover:bg-[#1c1f22] items-center">
+              <div className=" flex w-full py-4 px-4 gap-x-3 cursor-pointer rounded-2xl border border-gray-300 hover:bg-gray-200 items-center">
                 <svg
                   className="shrink-0 text-appcolor-500"
                   fill="currentColor"
@@ -240,7 +238,7 @@ const MainContent = () => {
                   New Mind Map
                 </p>
               </div>
-              <div className="flex w-full py-4 px-4 gap-x-3 cursor-pointer rounded-2xl border border-[#4c4d51] hover:bg-[#1c1f22] items-center">
+              <div className=" flex w-full py-4 px-4 gap-x-3 cursor-pointer rounded-2xl border border-gray-300 hover:bg-gray-200 items-center">
                 <svg
                   className="shrink-0 text-appcolor-500"
                   fill="currentColor"

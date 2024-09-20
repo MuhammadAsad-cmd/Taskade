@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 body {
-  @apply bg-dark-gray text-white;
+  @apply bg-gray-100 text-gray-600 hover:text-gray-700;
 }
 
 .custom-scrollbar::-webkit-scrollbar {
@@ -18,7 +18,7 @@ body {
 }
 
 .custom-scrollbar::-webkit-scrollbar-track {
-  @apply bg-dark-gray;
+  @apply bg-gray-100;
 }
 
 .custom-scrollbar::-webkit-scrollbar-thumb {
