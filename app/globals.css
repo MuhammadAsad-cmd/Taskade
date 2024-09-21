@@ -3,9 +3,8 @@
 @tailwind utilities;
 
 body {
-  @apply bg-white text-gray-600 hover:text-gray-700;
+  @apply text-bodycolor bg-white;
 }
-
 .custom-scrollbar::-webkit-scrollbar {
   width: 0px;
   height: 0px;
@@ -22,18 +21,21 @@ body {
 }
 
 .custom-scrollbar::-webkit-scrollbar-thumb {
-  background-color: #333333;
+  /* background: linear-gradient(to right, #ff4d03, #ffcf14, #ff4d03); */
+  background-color: #ffcf14;
   border-radius: 10px;
 }
 
 .custom-scrollbar::-webkit-scrollbar-thumb:hover {
-  background: #555555;
+  background: linear-gradient(to right, #ff4d03, #ffcf14, #ff4d03);
 }
 
 .modal {
   opacity: 0;
   transform: translateY(-20px);
-  transition: opacity 0.3s ease, transform 0.3s ease;
+  transition:
+    opacity 0.3s ease,
+    transform 0.3s ease;
 }
 
 .modal.open {
@@ -44,4 +46,31 @@ body {
 .modal.close {
   opacity: 0;
   transform: translateY(-20px);
+}
+
+.BgLinear {
+  background: linear-gradient(to right, #ff4d03, #ffcf14, #ff4d03);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  transition: 1s all ease;
+}
+.BgLinear:hover {
+  color: #05bee2;
+}
+.TabsLinear {
+  background: linear-gradient(to right, #ff4d03, #ffcf14, #ff4d03);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  transition: 1s all ease;
+}
+
+.Linear:hover {
+  color: #05bee2;
+}
+
+.textLinear {
+  color: linear-gradient(to right, #ff4d03, #ffcf14, #ff4d03);
+  transition: 1s all ease;
 }

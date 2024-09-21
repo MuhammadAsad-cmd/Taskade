@@ -4,8 +4,8 @@ import MediaIcon from "../Icons/MediaIcon";
 import AutoIcon from "../Icons/AutoIcon";
 import TeamIcon from "../Icons/TeamIcon";
 import AgentIcon from "../Icons/AgentIcon";
-import ProjectIcon from "../Icons/ProjectIcon";
 import Navlink from "../Navlink/Navlink";
+import { AiOutlineProject } from "react-icons/ai";
 
 const TabPages = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -29,10 +29,10 @@ const TabPages = () => {
   }, []);
   return (
     <>
-      <div className="py-2.5 px-4 flex gap-3 items-center justify-between">
-        <div className="flex gap-1 overflow-x-auto custom-scrollbar whitespace-nowrap w-full items-center">
+      <div className="flex items-center justify-between gap-3 px-4 py-2.5">
+        <div className="custom-scrollbar flex w-full items-center gap-1 overflow-x-auto whitespace-nowrap">
           <Navlink href="/">
-            <ProjectIcon />
+            <AiOutlineProject className="text-lg" />
             Projects
           </Navlink>
           <Navlink href="/agent">
@@ -41,7 +41,7 @@ const TabPages = () => {
           <Navlink href="/agent/teams">
             <TeamIcon />
             AI Teams
-            <div className="px-2 h-5 text-[11px] rounded-full font-bold flex items-center justify-center text-gray-600 bg-gray-100 uppercase">
+            <div className="flex h-5 items-center justify-center rounded-full bg-gray-100 px-2 text-[11px] font-bold uppercase text-gray-600">
               new
             </div>
           </Navlink>
@@ -54,14 +54,14 @@ const TabPages = () => {
             Media
           </Navlink>
 
-          <div className="hover:text-vivid-pink text-gray-600 duration-300 ease-in-out text-sm cursor-pointer flex items-center min-h-8 px-2 rounded-full gap-1"></div>
+          <div className="flex min-h-8 cursor-pointer items-center gap-1 rounded-full px-2 text-sm text-gray-600 duration-300 ease-in-out hover:text-vivid-pink"></div>
         </div>
         <div className="relative">
           <div
             onClick={toggleDropdown}
-            className="flex md:mr-3 whitespace-nowrap items-center text-sm"
+            className="flex items-center whitespace-nowrap text-sm md:mr-3"
           >
-            <button className="flex h-8 items-center justify-center gap-2 rounded-full bg-primary px-3 pr-4 text-sm text-white transition duration-250 ease-in-out hover:bg-primary/80">
+            <button className="hover:bg-hoverPrimary flex h-8 items-center justify-center gap-2 rounded-full bg-primary px-3 pr-4 text-sm text-white transition duration-300 ease-in-out hover:text-black">
               <PlusIcon />
               Create new
             </button>
@@ -70,7 +70,7 @@ const TabPages = () => {
           {isOpen && (
             <div
               ref={dropdownRef}
-              className="absolute right-0 mt-2 w-[218px] bg-white shadow-lg border rounded-lg"
+              className="absolute right-0 mt-2 w-[218px] rounded-lg border bg-white shadow-lg"
             >
               <ul className="py-2">
                 <li className="px-4 py-2 hover:bg-gray-100">Option 1</li>

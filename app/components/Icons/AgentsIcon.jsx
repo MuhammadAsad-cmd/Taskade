@@ -9,7 +9,7 @@ const AgentsIcon = () => {
         viewBox="0 0 114 92"
         fill="currentColor"
         xmlns="http://www.w3.org/2000/svg"
-        className="mb-8 text-appcolor-500"
+        className="textLinear mb-8"
       >
         <path
           fill-rule="evenodd"

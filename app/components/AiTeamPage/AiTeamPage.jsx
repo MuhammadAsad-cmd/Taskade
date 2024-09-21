@@ -4,6 +4,7 @@ import PlusIcon from "../Icons/PlusIcon";
 import Image from "next/image";
 import AgentsIcon from "../Icons/AgentsIcon";
 import TeamPopup from "../PopUps/TeamPopup";
+import { FiPlus } from "react-icons/fi";
 
 const AiTeamPage = () => {
   const [isPopupOpen, setIsPopupOpen] = useState(false);
@@ -18,28 +19,24 @@ const AiTeamPage = () => {
   return (
     <>
       <div className="flex h-full justify-center">
-        <div className="flex max-w-md flex-col items-center text-center">
+        <div className="flex max-w-md flex-col items-center justify-center text-center">
           <AgentsIcon />
-          <p className="mb-2 flex flex-col text-lg font-bold text-appcolor-1000">
+          <p className="text-appcolor-1000 mb-2 flex flex-col text-lg font-bold">
             Create your first agent team!
           </p>
-          <p className="text-sm text-appcolor-500">
+          <p className="text-appcolor-500 text-sm">
             Build and train your virtual team with Taskade. Add your agents into
             a team to chat with them!
-            <span className="text-primary cursor-pointer hover:text-primary/80">
+            <span className="hover:text-hoverPrimary cursor-pointer text-primary duration-200 ease-in-out">
               Learn more.
             </span>
           </p>
           <button
             onClick={handleOpenPopup}
-            className="mb-2 mt-8 flex items-center rounded-xl border border-solid border-appcolor-300 bg-appcolor-100 py-1 pl-2 pr-3 text-sm font-semibold text-appcolor-800 transition duration-300 ease-in-out hover:bg-appcolor-100 hover:bg-appcolor-200 hover:text-appcolor-800 hover:shadow-lg"
+            className="hover:bg-hoverPrimary duration-250 mb-2 mt-8 flex h-[42px] items-center justify-center gap-2 rounded-xl bg-primary px-2 text-sm font-semibold text-white transition ease-in-out hover:text-black hover:shadow-lg"
           >
-            <div className="flex h-8 w-8 items-center justify-center transition duration-150 ease-in-out">
-              <PlusIcon />
-            </div>
-            <span className="transition duration-150 ease-in-out">
-              Create Team
-            </span>
+            <FiPlus className="text-xl" />
+            <span>Create Team</span>
           </button>
 
           <a
@@ -51,7 +48,7 @@ const AiTeamPage = () => {
               width={300}
               height={300}
               unoptimized
-              className="mt-8 w-full h-full rounded-xl"
+              className="mt-8 h-full w-full rounded-xl"
               src="/images/ai-team.gif"
               alt="Custom AI Agent"
             />
