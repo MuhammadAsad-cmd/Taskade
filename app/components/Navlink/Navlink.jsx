@@ -8,7 +8,7 @@ const Navlink = ({ href, children, end }) => {
   const isActive = pathname === href;
 
   const liClasses = `duration-300 ease-in-out text-sm cursor-pointer flex items-center min-h-8 px-2 rounded-full gap-1 ${
-    isActive ? "bg-gray-100 " : ""
+    isActive ? "" : ""
   }`;
 
   return (

@@ -7,6 +7,20 @@ module.exports = {
   ],
   theme: {
     extend: {
+      keyframes: {
+        slideIn: {
+          '0%': { transform: 'translateX(100%)', opacity: 0 },
+          '100%': { transform: 'translateX(0)', opacity: 1 },
+        },
+        slideOut: {
+          '0%': { transform: 'translateX(0)', opacity: 1 },
+          '100%': { transform: 'translateX(-100%)', opacity: 0 },
+        },
+      },
+      animation: {
+        slideIn: 'slideIn 1s ease-out forwards',
+        slideOut: 'slideOut 1s ease-out forwards',
+      },
       colors: {
         'bodycolor':"#212529",
         'dark-gray': '#17191C', 
@@ -25,9 +39,11 @@ module.exports = {
         'light-gray': '#e3e5e8',
         'dark-charcoal': '#2c3035',
         'slate-gray': '#484d51',
-        'custom-orange-yellow': '0 4px 15px rgba(255, 165, 0, 0.5), 0 2px 7px rgba(255, 255, 0, 0.3)',
+        "bgDrop":"#FFFACD"
       },
     },
   },
-  plugins: [],
+  plugins: [
+    require('@tailwindcss/forms'),
+  ],
 };

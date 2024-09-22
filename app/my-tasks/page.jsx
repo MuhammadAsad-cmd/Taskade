@@ -1,10 +1,10 @@
 import React from "react";
-import AgeantsPage from "../components/AgentsPage/AgeantsPage";
+import TaskPage from "../components/TaskPage/TaskPage";
 
 const page = () => {
   return (
     <>
-      <AgeantsPage />
+      <TaskPage />
     </>
   );
 };

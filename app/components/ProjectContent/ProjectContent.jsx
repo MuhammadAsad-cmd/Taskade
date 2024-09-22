@@ -2,7 +2,9 @@ import React from "react";
 import PlusIcon from "../Icons/PlusIcon";
 import AutoIcon from "../Icons/AutoIcon";
 import { FaRegCircleCheck } from "react-icons/fa6";
-import { BsThreeDots } from "react-icons/bs";
+import { BsEmojiSmile, BsThreeDots } from "react-icons/bs";
+import { BiFileBlank } from "react-icons/bi";
+import { LuPlus } from "react-icons/lu";
 
 const ProjectContent = () => {
   return (
@@ -31,7 +33,22 @@ const ProjectContent = () => {
         </button>
       </div>
 
-      <div className="hover:bg-gray-100">
+      <div className="flex flex-col items-center justify-center text-center">
+        <div className="size-20 text-7xl">
+          <BsEmojiSmile />
+        </div>
+        <p className="mt-3 text-lg font-normal">
+          Create a new project to get started.🌈
+        </p>
+        <div className="mt-4 flex items-center whitespace-nowrap text-sm">
+          <button className="flex h-8 items-center justify-center gap-2 rounded-full bg-primary px-3 pr-4 text-sm text-white transition duration-300 ease-in-out hover:bg-hoverPrimary hover:text-black">
+            <BiFileBlank className="text-xl" />
+            Start with blank project
+          </button>
+        </div>
+      </div>
+
+      {/* <div className="hover:bg-gray-100">
         <div className="flex justify-between px-4 py-[14px]">
           <div className="flex">
             <button
@@ -127,7 +144,7 @@ const ProjectContent = () => {
             </button>
           </div>
         </div>
-      </div>
+      </div> */}
     </>
   );
 };

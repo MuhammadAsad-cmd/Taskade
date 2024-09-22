@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 body {
-  @apply text-bodycolor bg-white;
+  @apply bg-white text-bodycolor;
 }
 .custom-scrollbar::-webkit-scrollbar {
   width: 0px;
@@ -27,7 +27,7 @@ body {
 }
 
 .custom-scrollbar::-webkit-scrollbar-thumb:hover {
-  background: linear-gradient(to right, #ff4d03, #ffcf14, #ff4d03);
+  background: #ffcf14;
 }
 
 .modal {

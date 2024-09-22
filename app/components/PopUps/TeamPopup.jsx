@@ -26,31 +26,16 @@ const TeamPopup = ({ onClose }) => {
     }, 300);
   };
 
-  // Close TeamPopup when clicking outside the modal
-  //   useEffect(() => {
-  //     const handleClickOutside = (event) => {
-  //       if (modalRef.current && !modalRef.current.contains(event.target)) {
-  //         handleCloseTeamPopup(); // Close TeamPopup if clicked outside
-  //       }
-  //     };
-
-  //     document.addEventListener("mousedown", handleClickOutside);
-
-  //     return () => {
-  //       document.removeEventListener("mousedown", handleClickOutside);
-  //     };
-  //   }, []);
-
   return (
     <>
-      <div className="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50 z-50">
+      <div className="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-50">
         <div
           //   ref={modalRef}
-          className={`h-[570px] shadow-3xl w-full max-w-[550px] modal ${
+          className={`shadow-3xl modal h-[570px] w-full max-w-[550px] ${
             isOpen ? "open" : "close"
           }`}
         >
-          <div className="flex h-full flex-col bg-white rounded-3xl items-stretch border border-solid border-gray-300">
+          <div className="flex h-full flex-col items-stretch rounded-3xl border border-solid border-gray-300 bg-white">
             <div className="flex w-full flex-1 flex-col gap-4 overflow-auto px-8 py-6">
               <div className="flex flex-col gap-1 pt-2">
                 <h2 className="text-md flex items-center gap-1 font-medium">
@@ -61,7 +46,7 @@ const TeamPopup = ({ onClose }) => {
                   interactions.
                 </p>
               </div>
-              <div className="flex-wap -ml-2 flex max-h-48 items-center gap-px rounded-xl transition duration-250 ease-in-out">
+              <div className="flex-wap duration-250 -ml-2 flex max-h-48 items-center gap-px rounded-xl transition ease-in-out">
                 <TeamPopupIcon />
               </div>
               <div>
@@ -70,13 +55,13 @@ const TeamPopup = ({ onClose }) => {
                   type="text"
                   maxLength="255"
                   placeholder="Untitled team"
-                  className="flex rounded-xl w-full outline-none border border-solid bg-white px-3 py-2 text-sm leading-snug"
+                  className="flex w-full rounded-xl border border-solid bg-white px-3 py-2 text-sm leading-snug outline-none"
                 />
               </div>
               <span className="uppercase">Add to team</span>
               <div
                 onClick={handleOpenAgentPopup}
-                className="flex max-h-48 flex-col gap-y-px overflow-y-auto no-scrollbar"
+                className="no-scrollbar flex max-h-48 flex-col gap-y-px overflow-y-auto"
               >
                 <button
                   type="button"

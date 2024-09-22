@@ -113,7 +113,7 @@ const AgentPopup = ({ onClose }) => {
                           </p>
                         )}
                         {button.button && (
-                          <div className="hover:bg-hoverPrimary mt-2 w-full rounded-2xl border-solid border-primary bg-primary py-2 text-center text-sm font-medium text-white transition duration-500 ease-in-out hover:text-black">
+                          <div className="mt-2 w-full rounded-2xl border-solid border-primary bg-primary py-2 text-center text-sm font-medium text-white transition duration-500 ease-in-out hover:bg-hoverPrimary hover:text-black">
                             {button.button}
                           </div>
                         )}
