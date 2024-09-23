@@ -7,8 +7,8 @@ const SidebarLink = ({ href, children }) => {
 
   const isActive = pathname === href;
 
-  const liClasses = `text-sm cursor-pointer flex items-center min-h-8 px-2 shadow-none transition-colors duration-200 ease-in-out hover:bg-gray-100 hover:text-gray-700 rounded-lg gap-1 ${
-    isActive ? "bg-gray-100 " : ""
+  const liClasses = `sidebarItem flex cursor-pointer items-center gap-1.5 rounded-lg px-3 py-1.5 text-sm font-medium text-[#1b1b23b3] hover:bg-customBlackTransparent ${
+    isActive ? "bg-customBlackTransparent" : ""
   }`;
 
   return (

@@ -1,5 +1,5 @@
-import AgeantsPage from "@/app/components/AgentsPage/AgeantsPage";
 import React from "react";
+import AgeantsPage from "../components/AgentsPage/AgeantsPage";
 
 const page = () => {
   return (

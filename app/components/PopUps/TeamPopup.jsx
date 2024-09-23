@@ -1,8 +1,10 @@
 "use client";
 import React, { useEffect, useRef, useState } from "react";
+
 import TeamPopupIcon from "../Icons/TeamPopupIcon";
-import PlusIcon from "../Icons/PlusIcon";
+import { FaPlus } from "react-icons/fa";
 import AgentPopup from "./AgentPopup";
+import { FiPlus } from "react-icons/fi";
 
 const TeamPopup = ({ onClose }) => {
   const [isAgentPopupOpen, setIsAgentPopupOpen] = useState(false);
@@ -68,7 +70,7 @@ const TeamPopup = ({ onClose }) => {
                   className="group flex items-center gap-3 rounded-xl px-2 py-2 text-sm hover:bg-gray-100"
                 >
                   <div className="flex size-5 items-center justify-center">
-                    <PlusIcon />
+                    <FiPlus className="text-lg" />
                   </div>
                   Create agent
                 </button>

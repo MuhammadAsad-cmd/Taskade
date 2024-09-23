@@ -7,24 +7,15 @@ import SearchIcon from "../Icons/SearchIcon";
 import { FaCaretDown } from "react-icons/fa";
 import { HiOutlineViewGrid } from "react-icons/hi";
 import GlobalSecrchIcon from "../Icons/Skeltons/GlobalSecrchIcon";
-import TeamPopup from "../PopUps/TeamPopup";
-import ResponsiveSidebar from "../Sidebars/ResponsiveSidebar/ResponsiveSidebar";
+import ResponsiveSidebar from "../Sidebar/ResponsiveSidebar/ResponsiveSidebar";
+// import TeamPopup from "../PopUps/TeamPopup";
+// import ResponsiveSidebar from "../Sidebars/ResponsiveSidebar/ResponsiveSidebar";
 
 const SearchPage = () => {
   const [isExpandedType, setIsExpandedType] = useState(false);
   const [isExpandedSpace, setIsExpandedSpace] = useState(false);
   const [selectedType, setSelectedType] = useState("");
   const [selectedSpace, setSelectedSpace] = useState("");
-
-  const [isSidebarOpen, setIsSidebarOpen] = useState(false);
-
-  const handleOpenSidebar = () => {
-    setIsSidebarOpen(true);
-  };
-
-  const handleCloseSidebar = () => {
-    setIsSidebarOpen(false);
-  };
 
   const toggleExpansion = () => {
     setIsExpandedType(!isExpandedType);
@@ -54,6 +45,16 @@ const SearchPage = () => {
       icon: <HiOutlineViewGrid />,
     },
   ];
+
+  const [isSidebarOpen, setIsSidebarOpen] = useState(false);
+
+  const handleOpenSidebar = () => {
+    setIsSidebarOpen(true);
+  };
+
+  const handleCloseSidebar = () => {
+    setIsSidebarOpen(false);
+  };
   return (
     <>
       <div className="flex h-full w-full">
@@ -92,7 +93,7 @@ const SearchPage = () => {
                         value={type}
                         checked={selectedType === type}
                         onChange={() => setSelectedType(type)}
-                        className="h-4 w-4 border checked:bg-primary checked:ring-primary hover:border-primary hover:checked:bg-hoverPrimary focus:ring-primary"
+                        className="hover:checked:bg-hoverPrimary h-4 w-4 border checked:bg-primary checked:ring-primary hover:border-primary focus:ring-primary"
                       />
                       <span>{type.name}</span>
                       <span className="ml-2 h-5 rounded-full border bg-gray-100 px-2 text-xs leading-4">
@@ -149,7 +150,7 @@ const SearchPage = () => {
           </div>
         </div>
 
-        <div className="flex h-full w-full flex-col justify-center">
+        <div className="flex h-screen w-full flex-col justify-center">
           <div className="flex h-12 shrink-0 items-center px-4 pr-3 text-sm">
             <button
               onClick={handleOpenSidebar}
@@ -159,20 +160,21 @@ const SearchPage = () => {
             </button>
             <div className="flex items-center gap-2 gap-y-2">
               <SearchIcon />
-              Search
+              <p className="text-base font-medium"> Search </p>
             </div>
           </div>
           <div className="flex h-full w-full flex-col items-center justify-center overflow-y-auto px-4 py-3 pt-0 text-center">
-            <div className="mb-2 w-full">
+            <div className="mb-2 mt-1 w-full">
               <input
                 type="text"
                 id="search-input"
                 name="search-input"
-                className="flex w-full whitespace-nowrap rounded-xl border bg-white px-3 py-2 text-sm outline-none"
+                className="flex w-full whitespace-nowrap rounded-lg border bg-white px-3 py-2 text-base outline-none"
                 placeholder="Search all projects, comments, and workspaces..."
               />
             </div>
-            <div className="flex h-full flex-col items-center justify-center text-center">
+            {/* Skelton  */}
+            <div className="mt-6 flex h-full flex-col items-center justify-center text-center">
               <div className="mb-6">
                 <GlobalSecrchIcon />
               </div>

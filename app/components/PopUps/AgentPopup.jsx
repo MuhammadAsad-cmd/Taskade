@@ -1,12 +1,12 @@
 "use client";
 import { AgentsData } from "@/app/Data";
 import React, { useEffect, useRef, useState } from "react";
-import LearnIcon from "../Icons/LearnIcon";
-import CreateIcon from "../Icons/CreateIcon";
+import { BsInfoCircle } from "react-icons/bs";
+import { FaPlus } from "react-icons/fa";
 
 const AgentPopup = ({ onClose }) => {
   const [selectedAgent, setSelectedAgent] = useState(AgentsData[0]);
-  const [isOpen, setIsOpen] = useState(true); // To manage modal state
+  const [isOpen, setIsOpen] = useState(true);
   const modalRef = useRef(null);
 
   const handleAgentClick = (agent) => {
@@ -50,13 +50,13 @@ const AgentPopup = ({ onClose }) => {
           <div className="sticky top-0 z-30 flex w-full items-center justify-between gap-x-2 rounded-t-2xl border-b border-gray-200 bg-white px-2 py-2 md:px-5">
             <div className="flex items-center gap-2 whitespace-nowrap">
               <div className="hidden md:block">
-                <CreateIcon />
+                <FaPlus />
               </div>
               <span className="text-lg font-medium">Create Agent</span>
             </div>
             <div className="flex items-center gap-2">
               <div className="border-appcolor-300 bg-appcolor-100 duration-250 hover:border-appcolor-400 hover:bg-appcolor-300 hidden cursor-pointer items-center gap-2 whitespace-nowrap rounded-xl border border-solid px-4 py-1.5 transition ease-in-out md:flex">
-                <LearnIcon />
+                <BsInfoCircle />
                 Learn More
               </div>
               <div>
@@ -113,7 +113,7 @@ const AgentPopup = ({ onClose }) => {
                           </p>
                         )}
                         {button.button && (
-                          <div className="mt-2 w-full rounded-2xl border-solid border-primary bg-primary py-2 text-center text-sm font-medium text-white transition duration-500 ease-in-out hover:bg-hoverPrimary hover:text-black">
+                          <div className="hover:bg-hoverPrimary mt-2 w-full rounded-2xl border-solid border-primary bg-primary py-2 text-center text-sm font-medium text-white transition duration-500 ease-in-out hover:text-black">
                             {button.button}
                           </div>
                         )}

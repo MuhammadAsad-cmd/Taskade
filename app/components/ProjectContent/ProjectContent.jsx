@@ -1,6 +1,4 @@
 import React from "react";
-import PlusIcon from "../Icons/PlusIcon";
-import AutoIcon from "../Icons/AutoIcon";
 import { FaRegCircleCheck } from "react-icons/fa6";
 import { BsEmojiSmile, BsThreeDots } from "react-icons/bs";
 import { BiFileBlank } from "react-icons/bi";
@@ -33,7 +31,7 @@ const ProjectContent = () => {
         </button>
       </div>
 
-      <div className="flex flex-col items-center justify-center text-center">
+      <div className="mt-14 flex flex-col items-center justify-center text-center">
         <div className="size-20 text-7xl">
           <BsEmojiSmile />
         </div>
@@ -41,7 +39,7 @@ const ProjectContent = () => {
           Create a new project to get started.🌈
         </p>
         <div className="mt-4 flex items-center whitespace-nowrap text-sm">
-          <button className="flex h-8 items-center justify-center gap-2 rounded-full bg-primary px-3 pr-4 text-sm text-white transition duration-300 ease-in-out hover:bg-hoverPrimary hover:text-black">
+          <button className="hover:bg-hoverPrimary flex h-10 items-center justify-center gap-2 rounded-md bg-primary px-3 pr-4 text-sm font-medium text-white transition duration-300 ease-in-out hover:bg-primary/80">
             <BiFileBlank className="text-xl" />
             Start with blank project
           </button>

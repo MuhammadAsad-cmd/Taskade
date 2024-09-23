@@ -3,31 +3,25 @@
 @tailwind utilities;
 
 body {
-  @apply bg-white text-bodycolor;
-}
-.custom-scrollbar::-webkit-scrollbar {
-  width: 0px;
-  height: 0px;
-  margin-top: 4px;
+  @apply bg-background-secondary;
 }
 
-.custom-scrollbar:hover::-webkit-scrollbar {
-  width: 5px;
-  height: 5px;
+/* Custom scrollbar styling */
+.custom-scrollbar::-webkit-scrollbar {
+  width: 8px; /* Width of the scrollbar */
 }
 
 .custom-scrollbar::-webkit-scrollbar-track {
-  @apply bg-gray-100;
+  background: transparent; /* Background of the scrollbar track */
 }
 
 .custom-scrollbar::-webkit-scrollbar-thumb {
-  /* background: linear-gradient(to right, #ff4d03, #ffcf14, #ff4d03); */
-  background-color: #ffcf14;
-  border-radius: 10px;
+  background: #0071dc; /* Color of the scrollbar thumb */
+  border-radius: 4px; /* Rounded corners */
 }
 
 .custom-scrollbar::-webkit-scrollbar-thumb:hover {
-  background: #ffcf14;
+  background: #005bb5; /* Color of the scrollbar thumb on hover */
 }
 
 .modal {
@@ -48,29 +42,39 @@ body {
   transform: translateY(-20px);
 }
 
-.BgLinear {
-  background: linear-gradient(to right, #ff4d03, #ffcf14, #ff4d03);
-  -webkit-background-clip: text;
-  background-clip: text;
-  color: transparent;
-  transition: 1s all ease;
-}
-.BgLinear:hover {
-  color: #05bee2;
-}
-.TabsLinear {
-  background: linear-gradient(to right, #ff4d03, #ffcf14, #ff4d03);
-  -webkit-background-clip: text;
-  background-clip: text;
-  color: transparent;
-  transition: 1s all ease;
+.sidebarItem {
+  transition-duration: 0.15s;
+  transition-property: color, background-color, border-color,
+    text-decoration-color, fill, stroke;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.Linear:hover {
-  color: #05bee2;
+.fc-daygrid-event {
+  @apply rounded-lg bg-blue-500 text-white; /* Example of Tailwind utilities */
 }
 
-.textLinear {
-  color: linear-gradient(to right, #ff4d03, #ffcf14, #ff4d03);
-  transition: 1s all ease;
+.fc-col-header-cell {
+  border-bottom: 1px solid #f3f2f2 !important;
+}
+
+/* Add hover background effect */
+.fc-daygrid-day:hover {
+  background-color: #f3f2f2 !important;
+}
+
+.fc-daygrid {
+  border: none !important; /* Remove border around the calendar */
+}
+
+.fc-scrollgrid {
+  border: none !important; /* Remove borders around the main table */
+}
+
+.fc-daygrid-day-frame {
+  border: none !important; /* Remove borders inside the day cells */
+}
+
+/* Optional: Remove border from other elements as needed */
+.fc-daygrid-day-top {
+  border: none !important; /* Remove any border on the day cell header */
 }
