@@ -37,10 +37,10 @@ const ProfileDropdown = () => {
         {isDropdownOpen && (
           <div
             ref={dropdownRef}
-            className="absolute left-1/2 z-10 mt-2 w-[220px] -translate-x-1/2 rounded-md bg-white shadow-lg"
+            className="absolute right-0 z-[9999] mt-2 w-[220px] rounded-md bg-white shadow-lg"
           >
             {/* Arrow on top of dropdown */}
-            <div className="absolute -top-4 left-1/2 -translate-x-1/2 text-white">
+            <div className="absolute -top-4 right-4 text-white">
               <RiArrowUpSFill className="text-3xl" />
             </div>
 

@@ -11,10 +11,12 @@ import TaskIcon from "../../Icons/TaskIcon";
 import ClockIcon from "../../Icons/ClockIcon";
 import SearchIcon from "../../Icons/SearchIcon";
 import AiTeamIcon from "../../Icons/AiTeamIcon";
-import { FiFileText } from "react-icons/fi";
+import { FiFileText, FiSettings } from "react-icons/fi";
 import ProfileDropdown from "../../Dropdowns/ProfileDropdown/ProfileDropdown";
 import { LuChevronsUpDown } from "react-icons/lu";
 import { RiArrowUpSFill } from "react-icons/ri";
+import ChatIcon from "../../Icons/ChatIcon";
+import Upgrade from "../../Icons/Upgrade";
 
 const ResponsiveSidebar = ({ isOpen, onClose }) => {
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
@@ -57,11 +59,11 @@ const ResponsiveSidebar = ({ isOpen, onClose }) => {
           onClick={handleOverlayClick}
         >
           <div
-            className={`absolute left-0 top-0 z-50 h-screen w-[300px] transform bg-white shadow-lg transition-transform duration-300 ease-in-out ${
+            className={`absolute left-0 top-0 z-50 h-full w-[300px] transform bg-white shadow-lg transition-transform duration-300 ease-in-out ${
               isOpen ? "translate-x-0" : "-translate-x-full"
             }`}
           >
-            <div className="hide-scroll-bar flex h-full flex-col bg-background-secondary">
+            <div className="custom-scrollbar flex h-full flex-col overflow-y-auto bg-background-secondary">
               <div className="flex items-center justify-between p-3">
                 <div className="flex items-center justify-between gap-x-2 p-1">
                   <div className="cursor-pointer transition-opacity hover:opacity-80">
@@ -127,6 +129,10 @@ const ResponsiveSidebar = ({ isOpen, onClose }) => {
                   <FaRobot className="text-lg" />
                   <p>AI Agents</p>
                 </SidebarLink>
+                <SidebarLink href="/chat">
+                  <ChatIcon />
+                  <p>Chat with AI</p>
+                </SidebarLink>
                 <SidebarLink href="/agents/teams">
                   <AiTeamIcon />
                   <p>AI Teams</p>
@@ -168,9 +174,17 @@ const ResponsiveSidebar = ({ isOpen, onClose }) => {
                 <p className="text-textColor px-3 py-1 text-xs font-medium">
                   Activity
                 </p>
-                <SidebarLink href="/shared">
+                <SidebarLink href="/">
                   <FaBell className="text-xl" />
                   <p>Activity</p>
+                </SidebarLink>
+                <SidebarLink href="/setting">
+                  <FiSettings className="text-xl" />
+                  <p>Setting</p>
+                </SidebarLink>
+                <SidebarLink href="/upgrade">
+                  <Upgrade />
+                  <p>Upgradtion</p>
                 </SidebarLink>
               </div>
             </div>

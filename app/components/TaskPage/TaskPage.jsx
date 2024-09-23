@@ -60,7 +60,7 @@ const TaskPage = () => {
   ];
   return (
     <>
-      <div className="h-screen w-full">
+      <div className="h-full w-full">
         <div className="sticky top-0 flex h-12 w-full items-center justify-between gap-3 rounded-t-xl border-b bg-white px-3 lg:px-8">
           <div className="flex items-center gap-2 md:gap-4">
             <div
@@ -195,12 +195,12 @@ const TaskPage = () => {
 
           <div className="flex h-full w-full flex-col justify-center">
             <div className="flex h-12 shrink-0 items-center px-4 pr-3 text-sm">
-              <button
+              {/* <button
                 onClick={handleOpenSidebar}
                 className="mr-1 block md:hidden"
               >
                 <RiMenuUnfold3Line2 className="text-2xl" />
-              </button>
+              </button> */}
               {!isSidebarOpen && (
                 <button
                   onClick={toggleSidebar}

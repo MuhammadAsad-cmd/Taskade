@@ -2,7 +2,7 @@
 import Image from "next/image";
 import React, { useEffect, useRef, useState } from "react";
 import { FaBell, FaRobot } from "react-icons/fa";
-import { FiFileText } from "react-icons/fi";
+import { FiFileText, FiSettings } from "react-icons/fi";
 import { LuChevronsUpDown } from "react-icons/lu";
 import AiTeamIcon from "../Icons/AiTeamIcon";
 import SidebarLink from "../SidebarLink/SidebarLink";
@@ -15,6 +15,9 @@ import SearchIcon from "../Icons/SearchIcon";
 import { TbClockPlus } from "react-icons/tb";
 import ProfileDropdown from "../Dropdowns/ProfileDropdown/ProfileDropdown";
 import { RiArrowUpSFill } from "react-icons/ri";
+import ChatIcon from "../Icons/ChatIcon";
+import Upgrade from "../Icons/Upgrade";
+import PlusIcon from "../Icons/PlusIcon";
 
 const Sidebar = () => {
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
@@ -40,7 +43,7 @@ const Sidebar = () => {
   }, [dropdownRef]);
   return (
     <>
-      <div className="hide-scroll-bar flex h-full flex-col bg-background-secondary">
+      <div className="custom-scrollbar flex h-full flex-col overflow-y-auto">
         <div className="flex items-center justify-between p-3">
           <div className="flex items-center justify-between gap-x-2 p-1">
             <div className="cursor-pointer transition-opacity hover:opacity-80">
@@ -72,7 +75,7 @@ const Sidebar = () => {
               {isDropdownOpen && (
                 <div
                   ref={dropdownRef}
-                  className="absolute left-1/2 z-10 mt-2 w-[250px] -translate-x-1/2 rounded-md bg-white p-2 shadow-lg"
+                  className="absolute left-1/2 z-50 mt-2 w-[250px] -translate-x-1/2 rounded-md bg-white p-2 shadow-lg"
                 >
                   {/* Arrow on top of dropdown */}
                   <div className="absolute -top-4 left-1/2 -translate-x-1/2 text-white">
@@ -106,11 +109,19 @@ const Sidebar = () => {
             <FaRobot className="text-lg" />
             <p>AI Agents</p>
           </SidebarLink>
+          <SidebarLink href="/chat">
+            <ChatIcon />
+            <p>Chat with AI</p>
+          </SidebarLink>
           <SidebarLink href="/agents/teams">
             <AiTeamIcon />
             <p>AI Teams</p>
           </SidebarLink>
           <p className="text-textColor px-3 py-1 text-xs font-medium">Pages</p>
+          <div className="sidebarItem flex cursor-pointer items-center gap-1.5 rounded-lg px-3 py-1.5 text-sm font-medium text-[#1b1b23b3] hover:bg-customBlackTransparent">
+            <PlusIcon className="text-xl" />
+            <p>New Workspace</p>
+          </div>
           <SidebarLink href="/search">
             <SearchIcon />
             <p>Search</p>
@@ -145,9 +156,17 @@ const Sidebar = () => {
           <p className="text-textColor px-3 py-1 text-xs font-medium">
             Activity
           </p>
-          <SidebarLink href="/shared">
+          <SidebarLink href="/">
             <FaBell className="text-xl" />
             <p>Activity</p>
+          </SidebarLink>
+          <SidebarLink href="/setting">
+            <FiSettings className="text-xl" />
+            <p>Setting</p>
+          </SidebarLink>
+          <SidebarLink href="/upgrade">
+            <Upgrade />
+            <p>Upgradtion</p>
           </SidebarLink>
         </div>
       </div>

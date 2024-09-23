@@ -150,7 +150,7 @@ const SearchPage = () => {
           </div>
         </div>
 
-        <div className="flex h-screen w-full flex-col justify-center">
+        <div className="flex w-full flex-col justify-center">
           <div className="flex h-12 shrink-0 items-center px-4 pr-3 text-sm">
             <button
               onClick={handleOpenSidebar}
@@ -174,7 +174,7 @@ const SearchPage = () => {
               />
             </div>
             {/* Skelton  */}
-            <div className="mt-6 flex h-full flex-col items-center justify-center text-center">
+            <div className="mt-10 flex h-full flex-col items-center justify-center text-center">
               <div className="mb-6">
                 <GlobalSecrchIcon />
               </div>

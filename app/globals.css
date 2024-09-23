@@ -8,7 +8,7 @@ body {
 
 /* Custom scrollbar styling */
 .custom-scrollbar::-webkit-scrollbar {
-  width: 8px; /* Width of the scrollbar */
+  width: 4px; /* Width of the scrollbar */
 }
 
 .custom-scrollbar::-webkit-scrollbar-track {
@@ -16,12 +16,7 @@ body {
 }
 
 .custom-scrollbar::-webkit-scrollbar-thumb {
-  background: #0071dc; /* Color of the scrollbar thumb */
-  border-radius: 4px; /* Rounded corners */
-}
-
-.custom-scrollbar::-webkit-scrollbar-thumb:hover {
-  background: #005bb5; /* Color of the scrollbar thumb on hover */
+  @apply rounded bg-background-secondary; /* Rounded corners */
 }
 
 .modal {
