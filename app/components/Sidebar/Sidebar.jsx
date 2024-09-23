@@ -117,7 +117,7 @@ const Sidebar = () => {
             <AiTeamIcon />
             <p>AI Teams</p>
           </SidebarLink>
-          <p className="text-textColor px-3 py-1 text-xs font-medium">Pages</p>
+          <p className="px-3 py-1 text-xs font-medium text-textColor">Pages</p>
           <div className="sidebarItem flex cursor-pointer items-center gap-1.5 rounded-lg px-3 py-1.5 text-sm font-medium text-[#1b1b23b3] hover:bg-customBlackTransparent">
             <PlusIcon className="text-xl" />
             <p>New Workspace</p>
@@ -146,21 +146,21 @@ const Sidebar = () => {
             <Shared />
             <p>Shared</p>
           </SidebarLink>
-          <p className="text-textColor px-3 py-1 text-xs font-medium">
+          <p className="px-3 py-1 text-xs font-medium text-textColor">
             Quick Add
           </p>
           <div className="sidebarItem flex cursor-pointer items-center gap-1.5 rounded-lg px-3 py-1.5 text-sm font-medium text-[#1b1b23b3] hover:bg-customBlackTransparent">
             <TbClockPlus className="text-xl" />
             <p>Quick Add</p>
           </div>
-          <p className="text-textColor px-3 py-1 text-xs font-medium">
+          <p className="px-3 py-1 text-xs font-medium text-textColor">
             Activity
           </p>
           <SidebarLink href="/">
             <FaBell className="text-xl" />
             <p>Activity</p>
           </SidebarLink>
-          <SidebarLink href="/setting">
+          <SidebarLink href="/settings">
             <FiSettings className="text-xl" />
             <p>Setting</p>
           </SidebarLink>
